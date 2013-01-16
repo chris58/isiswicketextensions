@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.apache.isis.extensions</groupId>
+		<artifactId>wicket</artifactId>
+		<version>0.1-SNAPSHOT</version>
+		<relativePath>../../main</relativePath>
+	</parent>
+	
+	<artifactId>wicket-view-gmap2</artifactId>
+	<name>Wicket Viewer: Gmap2</name>
+	
+	<packaging>pom</packaging>
+
+	<dependencyManagement>
+	    <dependencies>
+		    <dependency>
+		      <groupId>org.apache.isis.extensions</groupId>
+		      <artifactId>wicket-view-gmap2-applib</artifactId>
+		      <version>0.1-SNAPSHOT</version>
+		    </dependency>
+    
+		    <dependency>
+		      <groupId>org.apache.isis.extensions</groupId>
+		      <artifactId>wicket-view-gmap2-view</artifactId>
+		      <version>0.1-SNAPSHOT</version>
+		    </dependency>
+    
+		    <dependency>
+                <groupId>org.wicketstuff</groupId>
+                <artifactId>gmap2</artifactId>
+			    <version>${wicketstuff.version}</version>
+		    </dependency>
+	    </dependencies>
+	</dependencyManagement>
+
+	<modules>
+	    <module>applib</module>
+	    <module>view</module>
+	</modules>
+
+</project>

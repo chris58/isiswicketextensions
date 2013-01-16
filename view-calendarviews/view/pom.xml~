@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.apache.isis.extensions</groupId>
+		<artifactId>wicket-view-calendarviews</artifactId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>wicket-view-calendarviews-view</artifactId>
+	<name>Wicket Viewer: CalendarViews View</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.isis.extensions</groupId>
+			<artifactId>wicket-view-calendarviews-applib</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.isis.extensions</groupId>
+			<artifactId>wicket-viewer</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.wicketstuff</groupId>
+			<artifactId>calendarviews</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
